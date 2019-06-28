@@ -55,4 +55,3 @@ Output: 3,3,NORTH
 
 # Author
 Niroo Arjuna
-niroo.dev
