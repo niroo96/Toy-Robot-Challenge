@@ -3,11 +3,11 @@ Solution for Toy Robot Simulator in Python
 
 # Instructions
 Create a library that can read in commands of the following form:
-- PLACE X,Y,DIRECTION
-- MOVE
-- LEFT
-- RIGHT
-- REPORT
+PLACE X,Y,DIRECTION
+MOVE
+LEFT
+RIGHT
+REPORT
 
 - The library allows for a simulation of a toy robot moving on a 5 x 5 square tabletop.
 - There are no obstructions on the table surface.
@@ -23,26 +23,27 @@ Create a library that can read in commands of the following form:
 - The library should discard all invalid commands and parameters.
 
 Example Input and Output:
+
 a)
-- PLACE 0,0,NORTH
-- MOVE
-- REPORT
-- Output: 0,1,NORTH
+PLACE 0,0,NORTH
+MOVE
+REPORT
+Output: 0,1,NORTH
 
 b)
-- PLACE 0,0,NORTH
-- LEFT
-- REPORT
-- Output: 0,0,WEST
+PLACE 0,0,NORTH
+LEFT
+REPORT
+Output: 0,0,WEST
 
 c)
-- PLACE 1,2,EAST
-- MOVE
-- MOVE
-- LEFT
-- MOVE
-- REPORT
-- Output: 3,3,NORTH
+PLACE 1,2,EAST
+MOVE
+MOVE
+LEFT
+MOVE
+REPORT
+Output: 3,3,NORTH
 
 - Use your preferred language, platform and IDE to implement this solution.
 - Your solution should be clean and easy to read, maintain and execute.
