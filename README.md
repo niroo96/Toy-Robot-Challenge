@@ -53,6 +53,15 @@ Output: 3,3,NORTH
 - You should provide build scripts or instructions to build and verify the solution.
 - The code should be original and you may not use any external libraries or open source code to solve this problem, but you may use external libraries or tools for building or testing purposes.
 
+# Notes
+1. classes/robot.py includes the main functions of the Toy Robot Simulator
+
+2. test.py includes the test cases for testing to ensure that the toy robot is placed within the bounds of the 5x5 square top, ensure that the toy robot does not move out of bounds, can do a full left & right turn & 3 example test cases.
+
+3. All test cases including the example test cases supplied have run successfully with no errors and this can be verified by running the test.py file in a python environment.
+
+4. The simulator is run from the main.py python script. Refer to the section below for instructions
+
 # Instructions
 1. Run in the main.py file in a python 3.x environment to initial the Toy Robot Challenge Script.
 

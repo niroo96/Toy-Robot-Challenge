@@ -113,8 +113,11 @@ class Test(TestCase):
         robot.left()
         self.assertEqual(robot.report(), "(3, 2, NORTH)")
 
+        robot.move()
+        self.assertEqual(robot.report(), "(3, 3, NORTH)")
+
         robot.report()
-        self.assertEqual(robot.report(), "(3, 2, NORTH)")
+        self.assertEqual(robot.report(), "(3, 3, NORTH)")
 
 
 # Code by Niroo Arjuna
