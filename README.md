@@ -52,3 +52,7 @@ Output: 3,3,NORTH
 - You should provide sufficient evidence that your solution is complete by, as a minimum, indicating that it works correctly against the supplied test data.
 - You should provide build scripts or instructions to build and verify the solution.
 - The code should be original and you may not use any external libraries or open source code to solve this problem, but you may use external libraries or tools for building or testing purposes.
+
+# Author
+Niroo Arjuna
+niroo.dev
