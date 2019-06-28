@@ -22,11 +22,11 @@ print("Developed by: Niroo Arjuna")
 print("--------------------------")
 
 while condition:
-    text_entered = input("Enter a new command (Type QUIT to exist script) ")
+    text_entered = input("Enter a new command (Type QUIT to exit script) ")
 
-    # convert user input to uppercase, so command comparison is case insensitive
+    # Convert user input to uppercase, so command comparison is case insensitive
     text_upper = text_entered.upper()
-    # split user input to a list
+    # Split user input to a list
     words = text_upper.split()
 
     # first word should contain command
