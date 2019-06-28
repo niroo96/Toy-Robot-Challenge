@@ -1,3 +1,5 @@
+# Code by Niroo Arjuna
+
 from classes.robot import Robot
 robot = Robot()
 condition = True
@@ -20,7 +22,7 @@ print("Developed by: Niroo Arjuna")
 print("--------------------------")
 
 while condition:
-    text_entered = input("Enter new command (QUIT for end): ")
+    text_entered = input("Enter a new command (QUIT to exist script) ")
 
     # convert user input to uppercase, so command comparison is case insensitive
     text_upper = text_entered.upper()
@@ -29,14 +31,14 @@ while condition:
 
     # first word should contain command
     if words[0] == "PLACE":
-        # command + three parameters - PLACE X Y FACING
+        # COMMAND + 3 Parameters [PLACE {X} {Y} {Direction}]
         if len(words) == 4:
             try:
-                xCoord = int(words[1])
-                yCoord = int(words[2])
-                facing = words[3]
+                xCoordinate = int(words[1])
+                yCoordinate = int(words[2])
+                direction = words[3]
 
-                robot.place(xCoord, yCoord, facing)
+                robot.place(xCoordinate, yCoordinate, direction)
             except ValueError:
                 print("Invalid command parameters")
         else:
@@ -52,4 +54,6 @@ while condition:
     elif words[0] == "QUIT":
         condition = False
     else:
-        print("Unknown command...")
+        print("Error: Unknown Command, please enter a valid command")
+
+# Code by Niroo Arjuna

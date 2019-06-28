@@ -56,12 +56,12 @@ Output: 3,3,NORTH
 # Instructions
 1. Run in the main.py file in a python 3.x environment to initial the Toy Robot Challenge Script.
 
-2. Place the toy robot inside the 5x5 square top using the PLACE function in the following format [PLACE {X Value} {Y Value} {Direction}]
+2. Place the toy robot inside the 5x5 square top using the PLACE function in the following format [PLACE {X} {Y} {Direction}]
 e.g (PLACE 0 0 NORTH, PLACE 1 2 EAST).
 
 3. Use the MOVE function to move the toy robot one unit forward in the direction it is currently facing.
 
-4. Use the LEFT & RIGHT function to rotate the toy robot 90 degrees i the specified direction without changing the position of the toy robot.
+4. Use the LEFT & RIGHT function to rotate the toy robot 90 degrees in the specified direction without changing the position of the toy robot.
 
 5. Use the REPORT function to announce the X,Y Coordinates & the orientation of the robot.
 
