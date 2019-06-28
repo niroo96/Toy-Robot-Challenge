@@ -104,11 +104,11 @@ class Robot:
 
     def coordinates_in_boundry(self, x, y):
         if x < 0 or x >= self.width: #Maximum self.width is 5
-            print("X coordinate is not valid!, please enter a value between 0 & 5")
+            print("Toy Robot's X coordinate is not valid!, please enter a value between 0 & 5")
             return False
 
         if y < 0 or y >= self.height: #Maximum self.height is 5
-            print("Y coordinate is not valid!, please enter a value between 0 & 5")
+            print("Toy Robot's Y coordinate is not valid!, please enter a value between 0 & 5")
             return False
 
         return True

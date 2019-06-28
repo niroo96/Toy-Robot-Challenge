@@ -1,5 +1,5 @@
 from unittest import TestCase
-from robot import Robot
+from classes.robot import Robot
 
 class Test(TestCase):
 

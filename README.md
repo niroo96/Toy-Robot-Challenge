@@ -1,7 +1,7 @@
 # Toy Robot Simulator
 Solution for Toy Robot Simulator in Python
 
-# Instructions
+# Challenge
 Create a library that can read in commands of the following form:
 PLACE X,Y,DIRECTION
 MOVE
@@ -52,6 +52,20 @@ Output: 3,3,NORTH
 - You should provide sufficient evidence that your solution is complete by, as a minimum, indicating that it works correctly against the supplied test data.
 - You should provide build scripts or instructions to build and verify the solution.
 - The code should be original and you may not use any external libraries or open source code to solve this problem, but you may use external libraries or tools for building or testing purposes.
+
+# Instructions
+1. Run in the main.py file in a python 3.x environment to initial the Toy Robot Challenge Script.
+
+2. Place the toy robot inside the 5x5 square top using the PLACE function in the following format [PLACE {X Value} {Y Value} {Direction}]
+e.g (PLACE 0 0 NORTH, PLACE 1 2 EAST).
+
+3. Use the MOVE function to move the toy robot one unit forward in the direction it is currently facing.
+
+4. Use the LEFT & RIGHT function to rotate the toy robot 90 degrees i the specified direction without changing the position of the toy robot.
+
+5. Use the REPORT function to announce the X,Y Coordinates & the orientation of the robot.
+
+5. Use the QUIT function to exit the toy robot simulator script.
 
 # Author
 Niroo Arjuna
