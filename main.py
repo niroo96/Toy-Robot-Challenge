@@ -22,7 +22,7 @@ print("Developed by: Niroo Arjuna")
 print("--------------------------")
 
 while condition:
-    text_entered = input("Enter a new command (QUIT to exist script) ")
+    text_entered = input("Enter a new command (Type QUIT to exist script) ")
 
     # convert user input to uppercase, so command comparison is case insensitive
     text_upper = text_entered.upper()
@@ -40,9 +40,9 @@ while condition:
 
                 robot.place(xCoordinate, yCoordinate, direction)
             except ValueError:
-                print("Invalid command parameters")
+                print("Error: Invalid command parameters, please enter valid command parameters")
         else:
-            print("Invalid syntax")
+            print("Error: Invalid syntax, please enter valid syntax")
     elif words[0] == "MOVE":
         robot.move()
     elif words[0] == "LEFT":
