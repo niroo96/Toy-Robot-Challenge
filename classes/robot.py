@@ -22,7 +22,7 @@ class Robot:
             print("Toy robot not placed due to unknown orientation!")
             return
 
-        #Robot placed if rob inside the square top and orientation is valid
+        #Robot placed if robot inside the square top and orientation is valid
         self.placed = True
         self.x_position = x
         self.y_position = y

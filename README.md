@@ -3,7 +3,7 @@ Solution for Toy Robot Simulator in Python
 
 # Challenge
 Create a library that can read in commands of the following form:
-PLACE X,Y,DIRECTION
+PLACE X Y DIRECTION
 MOVE
 LEFT
 RIGHT
@@ -25,25 +25,25 @@ REPORT
 Example Input and Output:
 
 a)
-PLACE 0,0,NORTH
+PLACE 0 0 NORTH
 MOVE
 REPORT
-Output: 0,1,NORTH
+Output: 0 1 NORTH
 
 b)
-PLACE 0,0,NORTH
+PLACE 0 0 NORTH
 LEFT
 REPORT
-Output: 0,0,WEST
+Output: 0 0 WEST
 
 c)
-PLACE 1,2,EAST
+PLACE 1 2 EAST
 MOVE
 MOVE
 LEFT
 MOVE
 REPORT
-Output: 3,3,NORTH
+Output: 3 3 NORTH
 
 - Use your preferred language, platform and IDE to implement this solution.
 - Your solution should be clean and easy to read, maintain and execute.
