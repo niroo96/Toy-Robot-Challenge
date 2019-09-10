@@ -7,10 +7,11 @@ class Robot:
         #Initially declare the variables of the Toy Robot
         self.x_position = None
         self.y_position = None
-        self.width = 5
-        self.height = 5
+        self.width = 6
+        self.height = 6
         self.facing = None
         self.placed = False
+        self.obstacle = [(2,2),(2,3)]
 
     def place(self, x, y, facing):
         #Initially checking to ensure that coordinates are in the 5x5 Square Top
@@ -21,6 +22,9 @@ class Robot:
         if facing not in self.orientation:
             print("Toy robot not placed due to unknown orientation!")
             return
+
+        if (x,y) in self.obstacle:
+            print("Toy Robot not placed due to finding an obstacle")
 
         #Robot placed if robot inside the square top and orientation is valid
         self.placed = True
@@ -44,13 +48,17 @@ class Robot:
         else:
             print("Toy Robot placed in unknown orientation and cannot be moved")
 
+        if (x, y) == self.obstacle[0] or self.obstacle[1]:
+            print("There is an obstacle")
+            return
+
         if self.coordinates_in_boundry(x,y) is True:
             #Move the Toy Robot
             self.x_position = x
             self.y_position = y
             print("Toy Robot has moved")
 
-    def left(self):
+    def left(self, x, y):
         if self.placed is False:
             print("Toy robot has not been placed!")
             return
@@ -103,15 +111,41 @@ class Robot:
         return info
 
     def coordinates_in_boundry(self, x, y):
-        if x < 0 or x >= self.width: #Maximum self.width is 5
+        if x < 0 or x > self.width: #Maximum self.width is 6
             print("Toy Robot's X position is out of bounds!")
             return False
 
-        if y < 0 or y >= self.height: #Maximum self.height is 5
+        if y < 0 or y > self.height: #Maximum self.height is 6
             print("Toy Robot's Y position is out of bounds!")
             return False
 
         return True
+
+    def avoid(self, x, y):
+        self.x_position = x
+        self.y_position = y
+
+        if (x,y) in self.obstacle:
+            print("Toy Robot has reported an obstacle")
+
+        else:
+            print("No obstacle has been placed")
+        return
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Code by Niroo Arjuna
 

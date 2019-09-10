@@ -51,6 +51,16 @@ while condition:
         robot.right()
     elif words[0] == "REPORT":
         robot.report()
+    elif words[0] == "AVOID":
+        if len(words) == 3:
+            try:
+                xCoordinate = int(words[1])
+                yCoordinate = int(words[2])
+                robot.avoid(xCoordinate, yCoordinate)
+            except ValueError:
+                print("Error: Invalid command parameters, please enter valid command parameters")
+        else:
+            print("Error: Invalid syntax, please enter valid syntax")
     elif words[0] == "QUIT":
         condition = False
     else:
